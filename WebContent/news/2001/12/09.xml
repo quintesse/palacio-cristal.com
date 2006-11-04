@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Added French DeeEnEs translation" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded the French language DLL for <link internal="/products/DeeEnEs/">DeeEnEs</link>
+		(thanks to Olivier Sannier). Who's next to be mentioned in the DeeEnEs hall of fame
+		(the credits)? Made a small page to tell people
+		<link internal="products/DeeEnEs/translate.jsp">how</link> they can contribute a
+		DeeEnEs translation.
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

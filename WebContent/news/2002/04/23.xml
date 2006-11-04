@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New DeeEnEs version 2.3.22" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded a new version of <link internal="/products/DeeEnEs/">DeeEnEs</link> (2.3.22)
+		which adds the latest DynDNS domains and repairs a bug in the HTTP protocol
+		handling. <b>Update</b>: I want to give thanks to the enormous amount of people
+		that warned me that the ZIP file I uploaded was corrupted. It's flattering to
+		know so many people actually pay attention to the things I do <b>*grin*</b>.
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

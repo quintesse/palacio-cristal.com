@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Added Italian DeeEnEs translation" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded the Italian language DLL for <link internal="/products/DeeEnEs/">DeeEnEs</link>
+		(thanks to Flavio Boniforti).
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

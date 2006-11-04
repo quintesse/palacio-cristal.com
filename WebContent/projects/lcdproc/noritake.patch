@@ -1,0 +1,76 @@
+--- acconfig.h	2002-11-22 09:04:48.000000000 +0100
++++ acconfig.h	2004-02-21 22:55:39.000000000 +0100
+@@ -77,4 +77,6 @@
+ #undef T6963_DRV
+ 
++#undef NORITAKE_DRV
++
+ /* Define the package name */
+ #undef PACKAGE
+--- acinclude.m4	2003-01-05 09:05:00.000000000 +0100
++++ acinclude.m4	2004-02-21 22:55:39.000000000 +0100
+@@ -9,11 +9,11 @@
+  	[                    hd44780,joy,irman,lircin,bayrad,glk,]
+  	[                    stv5730,sed1330,sed1520,svgalib,lcdm001,]
+- 	[                    t6963,wirz-sli,sgx120]
++ 	[                    t6963,wirz-sli,sgx120,noritake]
+ 	[                  \"all\" compiles all drivers],
+   	drivers="$enableval", 
+-  	drivers=[lcdm001,mtxorb,cfontz,cfontz633,cwlnx,curses,text,lb216,bayrad,glk,sgx120])
++  	drivers=[lcdm001,mtxorb,cfontz,cfontz633,cwlnx,curses,text,lb216,bayrad,glk,sgx120,noritake])
+ 
+ if test "$drivers" = "all"; then
+-	drivers=[mtxorb,cfontz,cfontz633,cwlnx,curses,text,lb216,hd44780,joy,irman,lircin,bayrad,glk,stv5730,sed1330,sed1520,svgalib,lcdm001,t6963,wirz-sli,sgx120]
++	drivers=[mtxorb,cfontz,cfontz633,cwlnx,curses,text,lb216,hd44780,joy,irman,lircin,bayrad,glk,stv5730,sed1330,sed1520,svgalib,lcdm001,t6963,wirz-sli,sgx120,noritake]
+ fi
+ 
+@@ -68,4 +68,9 @@
+ 			actdrivers=["$actdrivers sgx120"]
+ 			;;
++		noritake)
++			DRIVERS="$DRIVERS Noritake.o"
++			AC_DEFINE(NORITAKE_DRV)
++			actdrivers=["$actdrivers noritake"]
++			;;
+ 		curses)
+ 			AC_CHECK_HEADERS(ncurses.h curses.h)
+--- server/drivers/lcd.c	2002-11-22 09:04:49.000000000 +0100
++++ server/drivers/lcd.c	2004-02-21 22:55:40.000000000 +0100
+@@ -152,4 +152,8 @@
+ #endif
+ 
++#ifdef NORITAKE_DRV
++#include "Noritake.h"
++#endif
++
+ // Make program more readable and understandable;
+ // hide details...
+@@ -255,4 +259,7 @@
+ 	{"Toshiba", t6963_init,},
+ #endif
++#ifdef NORITAKE_DRV
++	{"Noritake", Noritake_init,},
++#endif
+ 
+ 	{NULL, NULL,},
+--- server/drivers/Makefile.am	2003-01-05 09:05:01.000000000 +0100
++++ server/drivers/Makefile.am	2004-02-21 22:55:40.000000000 +0100
+@@ -2,7 +2,7 @@
+ libLCDdrivers_a_SOURCES = lcd.c lcd.h lcd_lib.c lcd_lib.h
+ EXTRA_libLCDdrivers_a_SOURCES = MtxOrb.c MtxOrb.h text.c text.h \
+-        lcdm001.c lcdm001.h \
+-        curses_drv.c curses_drv.h drv_base.h \
+-        hd44780.c hd44780.h lb216.c lb216.h \
++	lcdm001.c lcdm001.h \
++	curses_drv.c curses_drv.h drv_base.h \
++	hd44780.c hd44780.h lb216.c lb216.h \
+ 	hd44780-4bit.c hd44780-4bit.h lpt-port.h timing.h \
+ 	hd44780-ext8bit.c hd44780-ext8bit.h lcd_sem.c lcd_sem.h \
+@@ -25,5 +25,6 @@
+ 	t6963.c t6963.h t6963_font.h \
+ 	wirz-sli.c wirz-sli.h \
+-	SGX120.c SGX120.h
++	SGX120.c SGX120.h \
++	Noritake.c Noritake.h
+ libLCDdrivers_a_DEPENDENCIES = @DRIVERS@
+ libLCDdrivers_a_LIBADD = @DRIVERS@

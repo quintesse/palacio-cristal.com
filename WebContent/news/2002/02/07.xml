@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Added Japanese and Chinese DeeEnEs translations" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded the Japanese and traditional Chinese language DLLs for
+		<link internal="/products/DeeEnEs/">DeeEnEs</link>
+		(thanks to Yasushi Osada and Stark Wong).
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

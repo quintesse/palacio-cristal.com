@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Option added for PayPal donations" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Made donations using <link external="http://www.paypal.com">PayPal</link> possible.
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>palacio-cristal.com</display-name>
+	<filter>
+		<description>Find or creates objects to be used in pages</description>
+		<display-name>Page Object Injector</display-name>
+	    <filter-name>ObjectInjector</filter-name>
+	    <filter-class>org.codejive.web.filters.ObjectInjector</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ObjectInjector</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<description>Provides the initial application initialization</description>
+		<display-name>StartupServlet</display-name>
+		<servlet-name>StartupServlet</servlet-name>
+		<servlet-class>org.codejive.web.servlets.StartupServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<description>Can manipulate an image in a variety of ways before sending it to the client</description>
+		<display-name>ImageFX</display-name>
+		<servlet-name>ImageFX</servlet-name>
+		<servlet-class>org.codejive.web.servlets.ImageFX</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ImageFX</servlet-name>
+		<url-pattern>/imagefx/*</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

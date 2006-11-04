@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New DeeEnEs version 2.3.25 and some site layout changes" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded a new version of <link internal="/products/DeeEnEs/">DeeEnEs</link> (2.3.25) which
+		adds the DynDNS domains (isa-geek) that were still missing. Also took the
+		opportunity to change the layout and coloring of the site a bit. Now uses a lot
+		more CSS and should also work on Mozilla/Netscape 7 browsers.
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

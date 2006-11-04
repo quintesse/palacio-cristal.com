@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:blog title="Spain" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:description xmlns="http://www.codejive.org/NS/portico/richtext">
+		Een overzicht van onze "avonturen" in Spanje.
+		We zijn hier voor minstens een jaar terwijl mijn vriendin haar studie
+		Informatica afmaakt aan de <link external="http://www.uem.es">Universidad Europa
+		de Madrid</link> (via het Erasmus programma) en ik ben op dit moment gedetacheerd
+		bij <link external="http://www.telefonica.es">Telefonica</link> (de spaanse KPN)
+		als een software engineer.
+		<para/>
+		<i>Sorry this blog is in Dutch because I think it is only interesting for a small
+		group of people anyway</i>.
+	</blog:description>
+</blog:blog>

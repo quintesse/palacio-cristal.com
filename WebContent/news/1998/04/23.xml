@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Added 'Contact Me' page" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Added a "<link internal="/contact.jsp">Contact Me</link>" page containing things
+		like address, telephone number (both normal and mobile), E-Mail and on top of that
+		a panel that connects you directly to me when I'm on-line with ICQ. You can check
+		my on-line status easily by looking at the flower image in the left-hand frame
+		next to the "<link internal="/contact.jsp">Contact Me</link>" menu item: if it's
+		green I'm on-line and by clicking on it you'll be transported directly to the
+		ICQ Web Panel. I also added a form where you should have been able to write me a
+		message that would be sent to my mobile phone, but my luck has it that the site
+		that provided that service has locked out external sites from posting data because
+		of several cases of abuse of their (free!) service . You could of course still go
+		to <link external="http://www.mtnsms.com/">their site</link> and enter things
+		manually, my <link internal="/contact.jsp">mobile phone number</link> is mentioned
+		on the "<link internal="/contact.jsp">Contact Me</link>" page as well.
+	</blog:content>
+	<blog:keyword>website</blog:keyword>
+</blog:item>

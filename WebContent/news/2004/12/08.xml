@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New DeeEnEs version 2.3.28" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded a new version of <link internal="/products/DeeEnEs/">DeeEnEs</link> (2.3.28) which now shows the
+		detected IP address in the tray-icon tooltip as well as the log window. The list of domains was
+		also updated to include the latest entry <b>servergame.org</b>. And thanks to RuX DeeEnEs is now
+		also available in the Catalan language. And last but certainly not least as of today DeeEnEs is
+		released under the GPL!
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

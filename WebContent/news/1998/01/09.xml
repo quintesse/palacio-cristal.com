@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New site design" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		First setup of my new site design. Still not much more than a couple of frames and
+		lots of empty pages. I'm waiting for FrontPage 98 to start using style sheets and
+		the like before I'll do much about the way these pages look. This is especially
+		true for things like the What's New pages because of the differences between
+		header and body text.
+	</blog:content>
+	<blog:keyword>website</blog:keyword>
+</blog:item>

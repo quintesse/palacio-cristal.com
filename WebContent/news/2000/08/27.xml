@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New DeeEnEs version 2.1.12" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded the latest version of <link internal="/products/DeeEnEs/">DeeEnEs</link> (2.1.12)
+		that now support the new and improved DynDNS update protocol.
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

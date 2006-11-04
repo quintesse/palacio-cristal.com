@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New product: DeeEnEs" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		A new program to update dynamic DNS accounts
+		<link internal="/products/DeeEnEs/">DeeEnEs</link> can now be
+		<link internal="/products/DeeEnEs">downloaded</link> from the website.
+		Made a first stab a page for this new program, but it still needs a help page.
+		I changed the contents menu on the left again, it now opens and closes any
+		submenus dynamically, but the behaviour I've written to change the background
+		color of the item still doesn't work the way it should.
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+	<blog:keyword>website</blog:keyword>
+</blog:item>

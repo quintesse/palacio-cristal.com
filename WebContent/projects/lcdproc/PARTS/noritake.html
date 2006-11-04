@@ -1,0 +1,107 @@
+
+<div class="page">
+
+<div class="title">
+	LCDproc driver for Noritake VFD displays
+</div>
+<br>
+
+<h3><a name="Introduction">Introduction</a></h3>
+
+<p><a href="http://www.lcdproc.org">LCDproc</a> makes it possible to output information to all kinds of LCD and VFD displays
+on Linux and BSD based systems. There are drivers for all kinds of brands and types of displays but one for my
+Noritake K612A4 VFD was missing so that's when I decided to write my own. The driver is still very new and still has
+some timing problems which put it in an illegal state at times. The other problem is that it seems that the default
+client doesn't seem to adhere to the specifications which makes certain optimizations impossible resulting in a
+flickering display in certain circumstances.</p>
+
+<h3>&nbsp;</h3>
+
+<h3><a name="Installation">Installation</a></h3>
+
+<ul>
+  <li>Download <a href="http://www.lcdproc.org/download.php3">lcdproc 0.4.4</a> and untar it</li>
+  <li>Download the <a href="noritake-driver-0.3.tar.bz2">Noritake driver tar ball</a></li>
+  <li>Untar the driver in the <i>lcdproc</i> <code>server/drivers</code> directory</li>
+  <li>Apply <a href="noritake.patch">this patch</a> in the main <i>lcdproc</i> directory using <code>patch -p0 < noritake.patch</code></li>
+  <li>Perform the following commands: <code>aclocal</code>, <code>autoconf</code> and <code>automake --add-missing</code></li>
+  <li>Now you can compile as described in the documentation (using <code>configure</code> and <code>make</code>)</li>
+</ul>
+
+<h3>&nbsp;</h3>
+
+<h3><a name="Configuration">Configuration</a></h3>
+
+<p>Add the following section to the <code>LCDd.conf</code> file:
+
+<pre>
+[Noritake]
+# Noritake driver
+
+# Select the output device to use [/dev/lcd]
+Device=/dev/ttyS0
+# Select the LCD type (size) [20x4]
+Size=30x4
+#Size=16x2
+# Select the font size (0 = normal, 1 = large) [0]
+# NB: Don't forget to adjust the Size when changing this!
+LargeFont=0
+# Set the communication speed [9600]
+# possible values: 1200, 2400, 9600
+Speed=19200
+# Fix a problem with bars not painting right
+# enabling this will show the bars correctly but
+# will cause the bars to flicker
+FixClientAbuse=0
+# When set to a value larger than 0 it specifies that we
+# want the display reset every 'ResetDelay' seconds [600]
+# This option exists because in some circumstances the
+# display gets corrupted and restarting LCDd was the only
+# solution
+ResetDelay=600
+</pre>
+
+<p>&nbsp;</p>
+
+<h3>History</h3>
+
+<h4>28 february 2004 - version 0.3</h4>
+
+<p>Updated the driver. It now actually determines how far a bar can grow and
+clears that part so a bar that becomes smaller can actually be seen to shrink.
+Before the bar would only grow and never shrink.</p>
+
+<p>The driver now also resets the display once every 10 minutes so that if
+it enters an illegal state it will at some time be reset to normal again.
+Problem is that it makes the display flicker so doing it more often just doesn't
+look good.</p>
+
+<h4>21 february 2004 - version 0.2</h4>
+
+<p>The driver is now released for the latest release version of <i>lcdproc</i> (0.4.4) instead of the 
+0.5 version from CVS. It now actually works with <a href="http://www.mythtv.org">MythtTV</a> which is what I needed this driver for.</p>
+
+<h4>15 february 2004 - version 0.1</h4>
+
+<p>First release of the driver for the 0.5 CVS version of <i>lcdproc</i></p>
+
+<p>&nbsp;</p>
+
+<h3>Known bugs</h3>
+
+<ul>
+<li>The brightness settings are ignored for now because it seems that the server sets it to 0 (off) after a few seconds
+and I haven't been able to determine yet why</li>
+<li>Fix timing problems which put the display in an illegal state at times</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3><a name="ToDo">To Do</a></h3>
+
+<ul>
+  <li>Implement support for <i>icons</i> as defined by the specifications</li>
+  <li>Try to see if we can somehow do without the <i>FixClientAbuse</i> kludge</li>
+</ul>
+</div
+

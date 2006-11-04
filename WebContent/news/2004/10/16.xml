@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Updated DeeEnEs FAQ" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Reverted color scheme back to normal.
+		Updated the DeeEnEs <link internal="/products/DeeEnEs/faq.jsp">FAQ</link>
+		a bit and made sure that requests to pages in the old site get redirected
+		to their new counterparts.
+	</blog:content>
+	<blog:keyword>website</blog:keyword>
+</blog:item>

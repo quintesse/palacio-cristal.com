@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Introducing my first weblog" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Added RSS support to the weblog code and added RSS discovery meta tags to the
+		weblog and main website pages. Thumbnails are now automatically generated
+		where necessary.
+	</blog:content>
+	<blog:keyword>website</blog:keyword>
+</blog:item>

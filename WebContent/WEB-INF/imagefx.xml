@@ -1,0 +1,15 @@
+<imagefx xmlns="http://www.codejive.org/NS/portico/imagefx">
+	<effects>
+		<effectdef name="scale" class="org.codejive.imagefx.effect.ScaleEffect" configClass="org.codejive.imagefx.effect.ScaleXmlConfig" />
+	</effects>
+	
+	<chains>
+		<chain name="thumbnail">
+			<effect ref="scale">
+<!--			<scale width="100px|25%|auto" height="100px|25%|auto" />
+				<scale size="100px|25%" /> -->
+				<scale size="200" />
+			</effect>
+		</chain>
+	</chains>
+</imagefx>

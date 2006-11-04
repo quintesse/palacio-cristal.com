@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New DeeEnEs version 2.2.18" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded the latest version of <link internal="/products/DeeEnEs/">DeeEnEs</link> (2.2.18)
+		that supports the 14(!) new DynDNS domains and fixes a bug when deleting accounts.
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

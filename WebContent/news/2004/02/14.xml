@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New project: lcdproc driver for Noritake K612A4" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Added a <a href="/projects/lcdproc">new section</a> to the site for
+		<a href="http://www.lcdproc.org">lcdproc</a> where I currently
+		keep a driver I wrote for the Noritake K612A4 VFD that I own.
+	</blog:content>
+	<blog:keyword>lcdproc</blog:keyword>
+</blog:item>

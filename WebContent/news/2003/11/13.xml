@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New DeeEnEs version 2.3.26" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded a new version of <link internal="/products/DeeEnEs/">DeeEnEs</link> (2.3.26) to
+		fix a bug in the web IP detection that was affecting a lot of people suddenly.
+		While I was at it I also added quite a number of new domains I found were missing
+		from DeeEnEs' list.
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

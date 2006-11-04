@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Changed indexing pages" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Changed all the indexing pages because what I had in mind worked okay, until you
+		started to use the back-button that is. You could actually see that more than one
+		page was being loaded because pressing Back would restore each frame to its
+		previous page on at a time. I wonder if there is a way to make IE (or any browser)
+		see multiple loads as one. Well anyway, it's probably for the best because
+		depending too much (or at all!) on scripts to navigate your site is bound to drive
+		people away if they use a non-scriptable or buggy browser.
+	</blog:content>
+	<blog:keyword>website</blog:keyword>
+</blog:item>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Updated Contacts page" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Updated <link internal="/contact.jsp">Contacts</link> page. It now includes my
+		<link external="http://www.xoip.nl">XOIP</link> number and it distinguises between
+		my current and old E-mail addresses.
+	</blog:content>
+	<blog:keyword>website</blog:keyword>
+</blog:item>

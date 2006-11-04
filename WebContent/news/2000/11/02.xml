@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New DeeEnEs version 2.1.15" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded the latest version of <link internal="/products/DeeEnEs/">DeeEnEs</link> (2.1.15)
+		that sports a new accounts dialog layout and has several changes to make it use
+		as little CPU time as possible.
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

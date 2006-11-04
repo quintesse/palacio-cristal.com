@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:blog title="What's New" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:description xmlns="http://www.codejive.org/NS/portico/richtext">
+		Anything new on the website will be announced here.
+	</blog:description>
+</blog:blog>

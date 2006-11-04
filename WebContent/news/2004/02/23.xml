@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New DeeEnEs version 2.3.27" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded a new version of <link internal="/products/DeeEnEs/">DeeEnEs</link> (2.3.27)
+		to fix a tiny bug which causes mayor problems. Due to a bug that has
+		existed for some time some older versions of DeeEnEs have effectively
+		started a DDOS attack on my website (laugh all you want, 10GB of traffic
+		each week is <u>not</u> funny! Ok ok, so it <u>is</u> funny, but it is
+		still a big problem that has to be solved).
+		So everybody please upgrade now!
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

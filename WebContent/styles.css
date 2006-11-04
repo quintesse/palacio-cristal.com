@@ -1,0 +1,52 @@
+.headlinecell {
+	border-left: 8px none rgb(0,0,255);
+	border-right: 8px none rgb(0,0,128);
+	border-top: 8px none rgb(0,0,255); 
+	border-bottom: 8px none rgb(0,0,128) 
+	font-weight: bold;
+	background-color: rgb(128,128,128);
+	color: white 
+}
+BODY					{ font-family: Arial; background-image: url('/images/Gray_Weave9390.gif'); background-attachment: fixed }
+A						{ text-decoration: none }
+A:hover					{ text-decoration: underline }
+IMG						{ border-width: 0 }
+DIV.webtitle			{ background-color: blue; color: white; text-align: center; font-weight: bold; font-size: 24pt; }
+DIV.page				{ border-width :1; border-style : solid; border-color : blue; padding: 5px; background-color : lightGrey; }
+DIV.title				{ border-width: 5; border-style: solid; border-color: #0000ff; text-align: center; font-weight: bold; font-size: 24pt; padding: 10; background-color: lightGrey}
+DIV.title A				{ text-decoration: none; color : black; }
+DIV.subtitle			{ border-width :1; border-style : solid; border-color : blue; padding: 5px; background-color : lightGrey; }
+TABLE.title				{ width: 100%; border-width: 5; border-style: solid; border-color: #0000ff; background-color: lightGrey}
+TABLE.menu				{ width: 100%; border-width :0; padding: 0 }
+TABLE.submenu			{ width: 100%; border-width :0; padding: 0 }
+TABLE.menu IMG.arrow	{ float: right }
+TABLE.menu TR.selected	{ background-color: #2222ff }
+TABLE.menu TR.submenu	{  }
+TABLE.menu TR			{ background-color: lightGray; }
+TABLE.menu TD.spacer	{ width: 15 }
+TABLE.menu TD			{ width: 90% }
+DIV.subpage				{ border-width :1; border-style : solid; border-color : blue; }
+DIV.history				{ border-width :1; border-style : solid; border-color : blue; }
+DIV.header				{ background-color : blue; color : white; font-weight: bold; padding: 2; }
+DIV.header A			{ text-decoration: none; color : white; }
+DIV.header A:hover		{ text-decoration: underline; color : white; }
+DIV.subpagemem			{ border-width :1; border-style : solid; border-color : darkGray; }
+DIV.historymem			{ border-width :1; border-style : solid; border-color : darkGray; }
+DIV.headermem			{ background-color : darkGray; color : black; font-weight: bold; padding: 2; }
+DIV.subpagestrong		{ border-width :1; border-style : solid; border-color : red; }
+DIV.historystrong		{ border-width :1; border-style : solid; border-color : red; }
+DIV.headerstrong		{ background-color : red; color : white; font-weight: bold; padding: 2; }
+DIV.text				{ background-color : lightGrey; padding: 2; }
+DIV.header DIV.version	{ display: inline; }
+DIV.header DIV.date		{ display: inline; }
+DIV.photo				{ display: inline; padding: 10px; vertical-align: middle; background-color: black; }
+TD.lt					{ background-color: #C0C0C0; }
+TD.dk					{ background-color: #808080; }
+TABLE.photostrip		{ width: 100%; border-width: 0; }
+CODE					{ font-weight: bold; }
+TABLE.mainTable			{ width: 100%; align: center; }
+TD.navBar				{ }
+TD.menuBar				{ vertical-align: top; }
+TD.contentBar			{ vertical-align: top; width: 99%; }
+TD.topContent			{ vertical-align: top; }
+

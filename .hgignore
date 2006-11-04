@@ -1,0 +1,6 @@
+syntax: glob
+.metadata
+build
+work
+WebContent/FotoAlbum/Fotos
+WebContent/FotoAlbum/Fotos.bak

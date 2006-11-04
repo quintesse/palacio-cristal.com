@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Updated Contacts page again" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Updated my mobile phone number on the <link internal="/contact.jsp">Contacts</link>
+		page and removed the old e-mail addresses because people kept using them even
+		though they were marked "OLD".
+	</blog:content>
+	<blog:keyword>website</blog:keyword>
+</blog:item>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Introducing my first weblog" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Introduced my first weblog telling of our "adventures" while we're in Spain.
+		Did some restructuring and recoding of the site which resulted in a new
+		<link internal="/news">News</link> page based on the weblog code. So basically
+		the news page is just another weblog. 
+	</blog:content>
+	<blog:keyword>website</blog:keyword>
+</blog:item>

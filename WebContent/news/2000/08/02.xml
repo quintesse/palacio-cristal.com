@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New DeeEnEs version 2.0.11" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded the latest version of <link internal="/products/DeeEnEs/">DeeEnEs</link> (2.0.11)
+		fixing a bug in the Web based IP checking.
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

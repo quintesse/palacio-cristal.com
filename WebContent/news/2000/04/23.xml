@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New DeeEnEs and some site changes" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded an updated version of <link internal="/products/DeeEnEs/">DeeEnEs</link>.
+		Changed the menu-handling somewat so Netscape users can actually use it. For one
+		reason or another the fold-out menu doesn't want to work with
+		<link external="http://www.netscape.com">Netscape 6</link> or
+		<link external="http://www.mozilla.org">Mozilla</link> Seamonkey M15. The
+		"places" section in "<link internal="/FotoAlbum/">My Photos</link>" is
+		now shown in two columns, it looks better that way and allows for more places to
+		be shown at once.
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

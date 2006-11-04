@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Added 'My Camera' page" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Added a <link internal="/FotoAlbum/Camera/">My Camera</link> page with information about the
+		Nikon Coolpix that I own and my experiences with digital photography. It also
+		contains downloads for the drivers and the software needed to plug a Coolpix into
+		a computer.
+	</blog:content>
+	<blog:keyword>website</blog:keyword>
+	<blog:keyword>photos</blog:keyword>
+</blog:item>

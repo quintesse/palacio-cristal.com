@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.codejive.org/NS/portico/weblog"
+           xmlns="http://www.codejive.org/NS/portico/weblog"
+           elementFormDefault="qualified">
+	<xs:element name="blog">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="description" minOccurs="0"
+					maxOccurs="1" />
+				<xs:element ref="item" maxOccurs="unbounded" minOccurs="0"></xs:element>
+			</xs:sequence>
+			<xs:attribute name="title" type="xs:NMTOKEN" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="description">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:any />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="item">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="content" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="keyword" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="title" type="xs:NMTOKEN" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="content">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:any />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="keyword" type="xs:string"/>
+</xs:schema>

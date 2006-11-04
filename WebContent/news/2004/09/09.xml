@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Redesign and new server" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		After a slight redesign and re-implementing everything using JSP 
+		the site is now running on my own personal co-located server. 
+		The <link internal="/FotoAlbum">Photo Gallery</link> now uses 
+		<link external="http://jalbum.net">JAlbum</link>.
+	</blog:content>
+	<blog:keyword>website</blog:keyword>
+</blog:item>

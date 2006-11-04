@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New Noritake driver version 0.2" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded version 0.2 of the <link internal="/projects/lcdproc">Nortiake driver</link>
+		which now works with the 0.4.4 stable version of
+		<link external="http://www.lcdproc.org">lcdproc</link>.
+	</blog:content>
+	<blog:keyword>lcdproc</blog:keyword>
+</blog:item>

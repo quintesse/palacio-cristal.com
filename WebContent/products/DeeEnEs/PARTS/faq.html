@@ -1,0 +1,169 @@
+
+<div class="page">
+<div class="title"> FAQ
+</div>
+<br>
+<p>
+</p>
+<div class="history">
+<div class="header">1. Which update method should I choose? Modem, LAN
+or
+Web-based?</div>
+<div class="text">This depends on your particular situation, but let's
+start by saying
+that Web-based will
+work in <u>any</u> situation so to test if you've configured
+everything correctly you could
+start by selecting that one.</div>
+<div class="text">But now for the actual explanation. You should only
+choose Modem or
+LAN if your computer
+is <u>directly</u> connected to the internet and has a publicly
+accessible IP address.
+If you're behind a firewall or using a NAT-capable router or access the
+internet using an
+ADSL or Cable Modem you will must likely <u>not</u> have a publicly
+accessible IP address.
+The only option left will be Web-based udates.</div>
+<div class="text">So what is the difference? Well with the Modem and
+LAN update
+methods DeeEnEs can detect
+any changes in your IP adress almost instantly while the Web-based
+method can take up to
+10 minutes in a worst-case scenario (see question #2 below). If you add
+to that the normal
+delay of the
+internet when you change IP addresses (see question #3 below) it can
+take almost
+half an hour between the moment your IP actually changed and the moment
+everybody
+in the world can access your domain again.</div>
+</div>
+<div class="history">
+<div class="header">2. I know my IP address has changed so why is
+DeeEnEs not
+updating?</div>
+<div class="text">You are probably using the Web-based update method.
+When using this
+method
+DeeEnEs periodically checks with an external server to see if your IP
+address
+has changed. To prevent DeeEnEs from putting too much strain on that
+server
+it will never check more than once every 10 minutes. So in a worst-case
+scenario it can take up to 10 minutes before DeeEnEs notices that your
+IP
+address has changed. If you are <u>really</u> sure that your IP
+address has
+changed you can select <b>Force Update</b> from the tray icon's pop-up
+menu.</div>
+</div>
+<div class="history">
+<div class="header">3. DeeEnEs says it updated successfully so why
+isn't my
+domain working?</div>
+<div class="text">This most likely has to do with the way the internet
+works. Changes
+to IP addresses
+take some time to propagate around the world. You can read <a
+ href="http://www.dyndns.org/services/dyndns/faq.html#19">here</a> what
+the people over
+at DynDNS have to say about it.</div>
+</div>
+<div class="history">
+<div class="header">4. DeeEnEs updated successfully hours ago so why is
+my
+domain still not working?</div>
+<div class="text">The first thing you can do is check what your
+computer thinks is the
+IP adress if
+your domain. To do this you can open a Command Window (select Run...
+from the Start menu,
+type <b>cmd</b> and click Ok) and type <b>ping yourdomain.dyndns.org</b>.
+You should
+change <b>yourdomain.dyndns.org</b> to the domain that you registered
+of course. You should get an output looking like this:
+</div>
+<pre>Pinging yourdomain.dyndns.org [<span style="font-weight: bold;">nnn.nnn.nnn.nnn</span>] with 32 bytes of data:<br><br>Reply from <span
+ style="font-weight: bold;">nnn.nnn.nnn.nnn</span>: bytes=32 time=18ms TTL=249<br>Reply from <span
+ style="font-weight: bold;">nnn.nnn.nnn.nnn</span>: bytes=32 time=18ms TTL=249<br>Reply from <span
+ style="font-weight: bold;">nnn.nnn.nnn.nnn</span>: bytes=32 time=27ms TTL=249<br>Reply from <span
+ style="font-weight: bold;">nnn.nnn.nnn.nnn</span>: bytes=32 time=15ms TTL=249<br><br>Ping statistics for <span
+ style="font-weight: bold;">nnn.nnn.nnn.nnn</span>:<br>    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>    Minimum = 15ms, Maximum = 27ms, Average = 19ms<br></pre>
+<div class="text">Where <b>nnn.nnn.nnn.nnn</b> is the IP address that
+is connected to
+your domain according to your computer. Now compare that with the IP
+address
+you get when going to <a href="http://checkip.dyndns.org/">this</a>
+page.
+If they are not the same you should double-check your account settings
+in DeeEnEs
+and see if it really updated. Check this by going into the Accounts
+dialog and
+selecting the account: the <b>enabled</b> option should be checked and
+the
+message in the middle should say Updated successfully with a recent
+date.
+Try selecting <b>Check now</b> from the tray icon's pop-up menu to see
+what happens.
+Check the log window for any errors or other message that might explain
+what is going on.
+</div>
+<div class="text">If the two IP addresses <u>are</u> the same DeeEnEs
+works perfectly
+and there is probably some other reason for your problem. The most
+likely
+problem that many people encounter is that they are trying to run a web
+or FTP server on their computer but can't access it. The reason for
+this
+most of the time is that fact that they are behind a firewall (either
+on their
+own computer, on their network or even their ISP) that is blocking
+incoming
+traffic from the internet. It's outside the scope of this FAQ to
+explain
+how to solve those problems. Try Google or a friend with some good
+understanding
+of firewalls and such.
+</div>
+</div>
+<div class="history">
+<div class="header">5. I get "Permission denied, program is in use"
+when trying
+to upgrade. What is wrong?</div>
+<div class="text">You are probably trying to copy the new DeeEnEs.exe
+over the old one
+while
+it is still running. This is not possible in Windows (it is not Linux
+afterall)
+so you first have to exit the currently running version DeeEnEs before
+copying the new file. To do this just right-click on the DeeEnEs tray icon
+and select Exit from the menu. Now copy the new <b>DeeEnEs.exe</b> over the
+old one and re-start the program by double-clicking it. 
+<br>
+If you can't remember
+where you left the old version, don't worry, just copy the program to any
+location you want and start it. This will ensure that from now on the
+new version will be used. If at any time in the future you come across the
+old version again you can safely delete it.</div>
+</div>
+<div class="history">
+<div class="header">6. Is it possible to run DeeEnEs as a service?</div>
+<div class="text">DeeEnEs does in fact have the capability to run as a
+service. It's
+just not advertised because it still doesn't work like it should.
+Why? Well, you can't change any of its settings while it runs as a
+service for example!
+So the only option would be to run it normally, make sure all the
+settings are okay, exit and then install it as a service.
+Installing it as a service is easy, you just start it from a command
+line with the option <b>/INSTALL</b>
+But if you need to change anything you will need to stop the service or
+even uninstall it (using <b>/UNINSTALL</b>),
+run it normally, change the settings and reinstall as a service.
+As you can see this is not very user-friendly.
+But if you really want to you can go ahead and use it.
+</div>
+</div>
+</div>
+

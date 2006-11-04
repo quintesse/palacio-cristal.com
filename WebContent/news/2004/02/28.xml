@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New Noritake driver version 0.3" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded version 0.3 of the <link internal="/Projects/lcdproc">Nortiake driver</link>
+		which now draws the bars a lot better (but still not perfect) and
+		which periodically resets itself.
+	</blog:content>
+	<blog:keyword>lcdproc</blog:keyword>
+</blog:item>

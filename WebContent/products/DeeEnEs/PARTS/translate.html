@@ -1,0 +1,81 @@
+
+
+<div class="page">
+
+<div class="title">
+	Translate DeeEnEs
+</div>
+<br>
+
+<h3><a name="Introduction">How to help translate DeeEnEs in your language</a></h3>
+
+<p>Do you want to help translate DeeEnEs into your own language (or any other 
+language with which you are sufficiently fluent)? Then I will explain to you 
+what you must do:</p>
+
+<ol>
+  <li class="largenum"><a href="index.jsp#Download">Download the sources</a>.</li>
+  <li class="largenum">Extract them to your hard disk and locate the 
+  <b>english_resources_template</b> folder.</li>
+  <li class="largenum">Make a copy of the template folder renaming it to <b>&lt;your_language&gt;_resources</b>.</li>
+  <li class="largenum">In the new folder edit the project file (DeeEnEs_lang.dsp) with a text 
+  editor and replace all occurrences of <b>YourLanguage</b> with the <u>English</u> 
+  name of the language you are translating to. </li>
+  <li class="largenum">Do the translation. There are several ways possible ways 
+  you can go about making the translation:
+	<ol>
+		<li><b>You have Visual C++</b>. This is the recommended way. You just 
+        open the project file that you edited in step 4 en start translating the 
+        dialogs, menus and strings. The good thing about doing it this way is 
+        that you can easily change positions and sizes of the labels and 
+        controls to them to the needs of the language you are translating to.</li>
+		<li><b>You will use a text editor</b>. This will be harder to do for 
+        you. All the strings are buried between lots of other information like 
+        menu and dialog definitions and lots of numbers and identifiers. The 
+        second problem is that you can't see when a string needs a little bit 
+        more space and therefore a button needs to grow or an edit control moved 
+        a bit. It also means that I have to go over the result to the adjusting 
+        for you and it will most likely take some time before I'll be able to 
+        publish the result to the website.</li>
+	</ol>
+  </li>
+  <li>Send me the <b>DeeEnEs_lang.rc</b> file.</li>
+</ol>
+
+<p>What if you don't have Visual C++ and don't want to mess about with a text 
+editor but you have <b>another resource editor</b>? This has the same advantage 
+as using Visual C++ of being able to adjust the labels and controls to the texts 
+you are writing. It has the disadvantage that it is more work for me to finally 
+integrate it with the entire DeeEnEs project and it will therefore be probable 
+that I will take a bit longer before being able to publish it on the website. If 
+you do it this way you:</p>
+
+<ol>
+  <li><a href="Default.htm#Download">Download the program</a>.</li>
+  <li>&nbsp;Load the DeeEnEs.exe into your resource editor and translate the 
+  texts.</li>
+  <li>&nbsp;Send me the adjusted executable (in a ZIP file please, Outlook 
+  blocks unsafe attachments).</li>
+</ol>
+<h3>Some things to think about</h3>
+<ul>
+  <li>Don't make the strings much longer than the English original, this will 
+  prevent you (or me) from having to make too much changes to the layout of the 
+  dialogs.</li>
+  <li>Try to be as concise as possible. Especially for buttons and labels you 
+  should try to use as few words and letters as possible without becoming 
+  unclear.</li>
+  <li>Use abbreviations only where necessary (or use very commonly used 
+  abbreviations only).</li>
+  <li>Try to stay as close to the original English meaning as possible but don't 
+  always translate too literally.</li>
+  <li>There are some places in the resources (especially the <b>Version</b> 
+  section) where you will encounter the word <b>[YourLanguage]</b>, of course 
+  you should enter the name of the language you are translating to.</li>
+  <li>In the <b>Version</b> section of the resource file you can put your own 
+  name in the <b>Comments</b> field (don't leave <b>Your Name Here</b> in 
+  there!). You should preferably leave this section in English.</li>
+</ul>
+
+</div>
+

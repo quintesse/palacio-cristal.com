@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New site and 'My Photos' page" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Well this is it. I finally decided to publish my new site. As we can see if
+		we look at this page I started designing this site quite some time ago. More
+		than 2 years actually! And then I just started doing other things and I just let
+		this new design collect dust in a manner of speaking. But since I bought myself
+		a digital camera (a Nikon Coolpix 950) in November last year I have steadily
+		been putting more and more pictures on the website, stashed in some corner with
+		no link to them. So this called for another decision to be made: would I or
+		would I not allow the whole world to see all the pictures I've made? Well the
+		result you can see right here on the "<link internal="/FotoAlbum/">My Photos</link>"
+		page.
+		<para/>
+		So is the site finished? Well, of course not. First rule of a successful
+		website is that it is <u>never</u> finished. But am I close to finished?
+		Well.... uhhh... not really. There's still the introduction on the main page
+		that is still non-existent and the same goes for the
+		"<link internal="/TOI.jsp">My Interests</link>" section which is empty.
+	</blog:content>
+	<blog:keyword>website</blog:keyword>
+</blog:item>

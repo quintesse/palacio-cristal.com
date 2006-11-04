@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Nieuw appartament" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+        <blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+        	<blog:summary>Vandaag hebben we ons nieuwe appartament betrokken! Oh wow, wat is dit lekker
+        	zeg, midden in de winter maar op het terras is het zalig vertoeven.</blog:summary>
+        	Wintersporters zullen het vast normaal vinden, maar voor mij is het voor het
+        	eerst dat ik kan merken dat te lang in de zon blijven zitten wel eens zou
+        	kunnen betekenen dat ik ga verbranden. Een kop koffie die ik in de schaduw
+        	had gezet was echt in een minuut ijs- en ijskoud geworden terwijl ik in de zon
+        	het te warm heb met alleen een overhemd aan.
+        	<para/>
+        	Ik zal later wat foto's van het huis laten zien, maar voor nu even een
+        	kaartje om te laten zien waar we nou precies wonen. Het eerste plaatje is van
+        	Madrid (het grootste deel in ieder geval) en we wonen in de wijk "Retiro".
+        	Het tweede kaartje is een stratenplan en de rode pijl geeft aan waar het huis
+        	staat. Oplettende mensen hebben vast iets heel leuks gezien in de linker
+        	bovenhoek van de kaart, ik laat het aan de rest over om het zelf te ontdekken.
+        </blog:content>
+</blog:item>
+

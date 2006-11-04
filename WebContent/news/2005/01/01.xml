@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New DeeEnEs version 2.3.30" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded a new version of <link internal="/products/DeeEnEs/">DeeEnEs</link> (2.3.30) which fixes a minor problem
+		with the tray icon status. It would continuously flash red after indicating an error if it was not able
+		to contact the server even if it happened only once. It will now show the offline status icon like it should.
+		I also fixed the URL that was opened when choosing Help from the pop-up menu (thanks to all those people that
+		pointed that one out to me).
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

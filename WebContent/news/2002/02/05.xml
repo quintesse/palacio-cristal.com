@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New DeeEnEs version 2.3.20 and Spanish translation" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded a new version of <link internal="/products/DeeEnEs/">DeeEnEs</link> (2.3.20)
+		which repairs the /AUTOEXIT option and uploaded a Spanish language DLL as well
+		(thanks to Josh Feldman).
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>

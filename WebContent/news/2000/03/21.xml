@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="New product: Easy Accent" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		<link internal="/products/eaccent/">Easy Accent</link> can finally be
+		<link internal="/products/eaccent">downloaded</link> from the website.
+		Updated it's pages a bit as well although a lot remains to be done to make
+		everything complete.
+	</blog:content>
+	<blog:keyword>Easy Accent</blog:keyword>
+	<blog:keyword>website</blog:keyword>
+</blog:item>

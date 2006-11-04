@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Added two Portuguese DeeEnEs translations" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Uploaded two new language DLLs, both for Portuguese (thanks to
+		Nuno Miguel Almeida Silva and Joaquim Alberto Vasconcellos).
+	</blog:content>
+	<blog:keyword>DeeEnEs</blog:keyword>
+</blog:item>
