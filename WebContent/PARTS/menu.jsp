@@ -6,21 +6,35 @@
 	<div class="text">
 		<table id="contents_menu" class="menu" cellspacing="0">
 			<tr id="introduction">
-			 <td nowrap><a href="/">Home</a></td>
+				<td nowrap><a href="/">Home</a></td>
 			</tr>
 			<tr id="news">
-			  <td nowrap><a href="/news/">What's New</a></td>
+				<td nowrap><a href="/news/">What's New</a></td>
 			</tr>
-			<tr id="news">
-			  <td nowrap><a href="/blogs/spain/">Spain</a></td>
-			  <td nowrap><a href="/blogs/linux/">Linux</a></td>
-			  <td nowrap><a href="/blogs/java/">Java</a></td>
+			<tr id="blogs">
+				<td nowrap><a href="/blogs/">Blogs</a></td>
+			</tr>
+			<tr id="blogs_submenu" class="submenu">
+				<td nowrap><table class="submenu" cellspacing="0">
+				<tr id="news">
+					<td nowrap class="spacer"></td>
+					<td nowrap><a href="/blogs/spain/">Spain</a></td>
+				</tr>
+				<tr id="news">
+					<td nowrap class="spacer"></td>
+					<td nowrap><a href="/blogs/linux/">Linux</a></td>
+				</tr>
+				<tr id="news">
+					<td nowrap class="spacer"></td>
+					<td nowrap><a href="/blogs/java/">Java</a></td>
+				</tr>
+				</table></td>
 			</tr>
 			<tr id="photos">
-			  <td nowrap><a href="/FotoAlbum/">Photo Gallery</a></td>
+				<td nowrap><a href="/FotoAlbum/">Photo Gallery</a></td>
 			</tr>
 			<tr id="contact">
-			  <td nowrap><a href="/contact.jsp">Contact Me</a><a href="/contact.jsp#ICQ"><img src="http://online.mirabilis.com/scripts/online.dll?icq=2283492&amp;img=5" align="absmiddle" border="0"></a></td>
+				<td nowrap><a href="/contact.jsp">Contact Me</a><a href="/contact.jsp#ICQ"><img src="http://online.mirabilis.com/scripts/online.dll?icq=2283492&amp;img=5" align="absmiddle" border="0"></a></td>
 			</tr>
 			<tr id="products">
 				<td nowrap><a href="/products/">Products</a></td>
@@ -49,7 +63,7 @@
 				</table></td>
 			</tr>
 			<tr id="toi">
-			  <td nowrap><a href="/TOI.jsp">Things of Interest</a></td>
+				<td nowrap><a href="/TOI.jsp">Things of Interest</a></td>
 			</tr>
 		</table>
 	</div>

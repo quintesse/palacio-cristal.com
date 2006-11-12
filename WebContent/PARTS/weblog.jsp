@@ -17,6 +17,8 @@ File f = appConfig.getResourceFile(blogName);
 URL url = new URL("http://" + request.getServerName() + ":" + request.getServerPort() + "/" + blogName + "/");
 Blog b = new FolderBlog(f, url);
 
+URL feedUrl = new URL("http://" + request.getServerName() + ":" + request.getServerPort() + "/rss.jsp?blog=" + blogName);
+
 pageContext.setAttribute("blog", b);
 
 File styleFile = appConfig.getResourceFile("xslt/richtext.xslt");
@@ -83,6 +85,9 @@ String article = request.getParameter("article");
 </c:forEach>
 
 </div>
+
+<br/>
+<a href="<%= feedUrl.toString() %>"><img src="/images/RSS.png" width="36px" height="14px" alt="RSS feed" tooltip="Link to the RSS feed for this blog" /></a>
 
 <%{
 /*

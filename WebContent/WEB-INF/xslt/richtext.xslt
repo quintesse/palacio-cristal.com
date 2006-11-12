@@ -21,7 +21,7 @@
 	</xsl:template>
 
 	<xsl:template match="txt:link[@external]">
-		<a href="{@external}" class="link externallink"><xsl:apply-templates /></a>
+		<a href="{@external}" class="link externallink" target="_blank"><xsl:apply-templates /></a><img src="/images/link.png" class="extlink" width="13px" height="9px" />
 	</xsl:template>
 
 	<xsl:template match="txt:b">
@@ -38,6 +38,14 @@
 
 	<xsl:template match="txt:para">
 		<p/><xsl:apply-templates />
+	</xsl:template>
+
+	<xsl:template match="txt:code">
+		<div class="code"><pre><code><xsl:apply-templates /></code></pre></div>
+	</xsl:template>
+
+	<xsl:template match="txt:quote">
+		<div class="quote"><blockquote><xsl:apply-templates /></blockquote></div>
 	</xsl:template>
 
 	<xsl:template match="txt:list">

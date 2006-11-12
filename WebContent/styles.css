@@ -27,19 +27,22 @@ TABLE.menu TD.spacer	{ width: 15 }
 TABLE.menu TD			{ width: 90% }
 DIV.subpage				{ border-width :1; border-style : solid; border-color : blue; }
 DIV.history				{ border-width :1; border-style : solid; border-color : blue; }
-DIV.header				{ background-color : blue; color : white; font-weight: bold; padding: 2; }
+DIV.header				{ background-color : blue; color : white; font-weight: bold; padding-left : 4px; padding-right : 4px; padding-top : 2px; padding-bottom : 2px; }
 DIV.header A			{ text-decoration: none; color : white; }
 DIV.header A:hover		{ text-decoration: underline; color : white; }
 DIV.subpagemem			{ border-width :1; border-style : solid; border-color : darkGray; }
 DIV.historymem			{ border-width :1; border-style : solid; border-color : darkGray; }
-DIV.headermem			{ background-color : darkGray; color : black; font-weight: bold; padding: 2; }
+DIV.headermem			{ background-color : darkGray; color : black; font-weight: bold; padding-left : 4px; padding-right : 4px; padding-top : 2px; padding-bottom : 2px; }
 DIV.subpagestrong		{ border-width :1; border-style : solid; border-color : red; }
 DIV.historystrong		{ border-width :1; border-style : solid; border-color : red; }
-DIV.headerstrong		{ background-color : red; color : white; font-weight: bold; padding: 2; }
-DIV.text				{ background-color : lightGrey; padding: 2; }
+DIV.headerstrong		{ background-color : red; color : white; font-weight: bold; padding-left : 4px; padding-right : 4px; padding-top : 2px; padding-bottom : 2px; }
+DIV.text				{ background-color : lightGrey; padding-left : 4px; padding-right : 4px; padding-top : 2px; padding-bottom : 2px; }
 DIV.header DIV.version	{ display: inline; }
 DIV.header DIV.date		{ display: inline; }
 DIV.photo				{ display: inline; padding: 10px; vertical-align: middle; background-color: black; }
+DIV.code				{ background-color : white; background-image : url(/images/code.png); background-repeat : repeat-y; background-position : top right; margin-left : 20px; margin-right : 20px; padding-left : 4px; padding-right : 4px; padding-top : 2px; padding-bottom : 2px; border-width :1; border-style : solid; border-color : blue; }
+DIV.code B				{ color : red }
+DIV.quote				{ background-color : white; background-image : url(/images/quote.png); background-repeat : no-repeat; background-position : top left; margin-left : 20px; margin-right : 20px; padding-left : 4px; padding-right : 4px; padding-top : 2px; padding-bottom : 2px; border-width :1; border-style : solid; border-color : blue; }
 TD.lt					{ background-color: #C0C0C0; }
 TD.dk					{ background-color: #808080; }
 TABLE.photostrip		{ width: 100%; border-width: 0; }
@@ -49,4 +52,4 @@ TD.navBar				{ }
 TD.menuBar				{ vertical-align: top; }
 TD.contentBar			{ vertical-align: top; width: 99%; }
 TD.topContent			{ vertical-align: top; }
-
+IMG.extlink				{ padding-left : 2px; }
