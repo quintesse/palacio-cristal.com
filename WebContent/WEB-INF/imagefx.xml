@@ -1,6 +1,6 @@
 <imagefx xmlns="http://www.codejive.org/NS/portico/imagefx">
 	<effects>
-		<effectdef name="scale" class="org.codejive.imagefx.effect.ScaleEffect" configClass="org.codejive.imagefx.effect.ScaleXmlConfig" />
+		<effectdef name="scale" class="org.codejive.imagefx.effect.ScaleEffect" configclass="org.codejive.imagefx.effect.ScaleXmlConfig" />
 	</effects>
 	
 	<chains>

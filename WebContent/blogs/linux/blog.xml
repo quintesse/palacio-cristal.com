@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blog:blog title="Linux" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
 	<blog:description xmlns="http://www.codejive.org/NS/portico/richtext">
-		Just a place to write down my Linux experiences and if I find
-		some information or news items that I think are really worthwile
-		I'll probably mention them here as well.
+		Just a place to write down my Linux experiences and if
+		I find some information or news items that I think are
+		really worthwile I'll probably mention them here as
+		well.
 	</blog:description>
 </blog:blog>
