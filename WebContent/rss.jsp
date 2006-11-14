@@ -20,7 +20,7 @@ Blog b = new FolderBlog(f, url);
 
 pageContext.setAttribute("blog", b);
 
-File styleFile = appConfig.getResourceFile("xslt/plaintext.xslt");
+File styleFile = appConfig.getResourceFile("xslt/poortext.xslt");
 StreamSource styleSource = new StreamSource(styleFile);
 TransformerFactory transFactory = TransformerFactory.newInstance();
 Transformer transformer = transFactory.newTransformer(styleSource);

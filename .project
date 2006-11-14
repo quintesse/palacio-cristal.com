@@ -5,6 +5,7 @@
 	<projects>
 		<project>codejive-common</project>
 		<project>codejive-web</project>
+		<project>syntax-hiliter</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
