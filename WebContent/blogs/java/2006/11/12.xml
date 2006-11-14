@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Code formatter test" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		This is just a test to see how the code syntax high-lighting works:
+		<code syntax="java">
+/*
+ * Created on Apr 22, 2005
+ */
+package org.codejive.common.cache;
+
+import java.io.File;
+
+public class FileUpdateMonitor implements UpdateMonitor {
+	private File file;
+	
+	private long lastModified;
+	
+	public FileUpdateMonitor(File _file) {
+		file = _file;
+		lastModified = file.lastModified();
+	}
+
+	public boolean isUpdated() {
+		return (file.lastModified() != lastModified);
+	}
+
+}
+		</code>
+	</blog:content>
+</blog:item>

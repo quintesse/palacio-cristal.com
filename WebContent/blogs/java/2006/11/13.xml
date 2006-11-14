@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Java GPLed!" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Wow, for me this definitely is an historic day, Sun will release the
+		entire Java platform as open source! And they're not just using any
+		license, they are actually releasing it under the 
+		<link external="http://www.gnu.org/copyleft/gpl.html">GPL</link>!
+		<para/>
+		But even more incredible in my opinion is Jonathan Schwartz,
+		director of Sun Microsystems, 
+		<link external="http://blogs.sun.com/jonathan/entry/fueling_the_network_effect">admitting</link>
+		that the final push for selecting the GPL was the Microsoft-Novell
+		anouncement last week about protecting eachother's customers from
+		patent violations:
+		<quote>
+By admitting that one of the strongest motivations to select the GPL was the announcement made last week by Novell and Microsoft, suggesting that free and open source software wasn't safe unless a royalty was being paid. As an executive from one of those companies said, "free has to have a price."
+<para/>
+That's nonsense.
+		</quote>
+		<para/>
+		Of course, Richard Stallman will have to revise his infamous essay
+		"<link external="http://www.gnu.org/philosophy/java-trap.html">Free But Shackled - The Java Trap</link>", but he doesn't seem to
+		<link external="http://sun.feedroom.com/?skin=oneclip&amp;fr_story=FEEDROOM166554&amp;rf=bm">mind much</link>,
+		in fact he seems pretty pleased, commending Sun for taking a
+		leadership role and saying that this makes Sun the world's biggest
+		single contributor of open source software.
+		<para/>
+		Personally I would like to see how the Linux distros will pick this up.
+		RedHat for example has always been a big supporter of Java, spending
+		a lot of time and effort to make sure that projects like
+		<link external="http://www.gnu.org/software/classpath/">GNU Classpath</link> and
+		<link external="http://gcc.gnu.org/java/">GCJ</link> work perfectly
+		on their systems.
+		<para/>
+		How will it all work out? Is there any use for the Classpath people
+		to continue now that their goal of having a free implementation of
+		the Java class libraries has been attained in one fell swoop?
+		<para/>
+		And how will GCJ be integrated into all of this (because that's one
+		project that is not going away for sure because native code compilation
+		will always be more interesting to some people than relying on JIT
+		compilation and the Hotspot optimizer)?
+		<para/>
+		This is all so exciting! I can't wait for the future to arrive!
+	</blog:content>
+</blog:item>
