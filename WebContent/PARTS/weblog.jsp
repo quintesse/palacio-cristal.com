@@ -3,6 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/xml" prefix="x" %>
 <%@ page import="org.codejive.web.weblog.*" %>
 <%@ page import="org.codejive.common.config.*" %>
+<%@ page import="org.codejive.web.richtext.*" %>
 <%@ page import="javax.xml.stream.*" %>
 <%@ page import="javax.xml.transform.*" %>
 <%@ page import="javax.xml.transform.stream.*" %>
@@ -61,7 +62,7 @@ String article = request.getParameter("article");
 		</div>
 		<div class="text">
 			<%{ 
-				StAXSource xml = new StAXSource(item.getContent());
+				StAXSource xml = new StAXSource(new CodeFormattingReader(item.getContent()));
 				StreamResult result = new StreamResult(out);
 				transformer.transform(xml, result);
 			}%>

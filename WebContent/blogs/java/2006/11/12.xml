@@ -15,6 +15,9 @@ public class FileUpdateMonitor implements UpdateMonitor {
 	
 	private long lastModified;
 	
+	/**
+	 * Constructor
+	 */
 	public FileUpdateMonitor(File _file) {
 		file = _file;
 		lastModified = file.lastModified();
@@ -24,6 +27,9 @@ public class FileUpdateMonitor implements UpdateMonitor {
 		return (file.lastModified() != lastModified);
 	}
 
+	public String toString() {
+		return "FileUpdateMonitor(File=" + file + ", lastModified=" + lastModified + ")";
+	}
 }
 		</code>
 	</blog:content>

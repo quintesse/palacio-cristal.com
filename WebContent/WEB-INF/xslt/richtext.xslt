@@ -2,6 +2,7 @@
 <xsl:stylesheet
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:txt="http://www.codejive.org/NS/portico/richtext"
+	xmlns:code="http://www.codejive.org/NS/portico/code"
 	version="1.0">
 
 	<xsl:output omit-xml-declaration="yes" />
@@ -82,5 +83,9 @@
 	<xsl:template match="txt:item" mode="definition">
 		<dt class="listitem listitemterm"><xsl:value-of select="@term" /></dt>
 		<dd class="listitem listitemdescription"><xsl:apply-templates /></dd>
+	</xsl:template>
+
+	<xsl:template match="code:*">
+		<span class="{local-name()}"><xsl:apply-templates /></span>
 	</xsl:template>
 </xsl:stylesheet>
