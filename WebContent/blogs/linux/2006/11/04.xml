@@ -122,15 +122,14 @@ udi = '/org/freedesktop/Hal/devices/storage_model_HL_DT_STCD_RW/DVD_ROM_GCC_4240
 		Using the information above I created my own fdi file
 		<b>information/30private/10-crappy-dell-cddrive.fdi</b>
 		with the following rules:
-		<code hilight="xml">
+		<code syntax="xml">
 &lt;deviceinfo version="0.2"&gt;
-
   &lt;device&gt;
 
-    &lt; Prevent polling on CD-Rom drive --&gt;
-      &lt;match key="storage.model" string="HL-DT-STCD-RW/DVD-ROM GCC-4240N"&gt;
-        &lt;merge key="storage.media_check_enabled" type="bool"&gt;false&lt;merge&gt;
-      &lt;match&gt;
+    &lt;!-- Prevent polling on CD-Rom drive --&gt;
+    &lt;match key="storage.model" string="HL-DT-STCD-RW/DVD-ROM GCC-4240N"&gt;
+      &lt;merge key="storage.media_check_enabled" type="bool"&gt;false&lt;merge&gt;
+    &lt;match&gt;
 
   &lt;device&gt;
 &lt;deviceinfo&gt;

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Regular Hell" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		I have been working the last couple of days on adding syntax
+		highlighting to my blog. For this I used the
+		<link external="http://sourceforge.net/projects/jedit-syntax">jEdit syntax</link>
+		package that I found on SourceForge. I had to change it a bit because
+		it was a bit too focused on using it from within an editor but all in
+		all it is not bad.
+		<para/>
+		Only the XML highlighting didn't really convince me, it would just
+		color everything blue except for the comments. So I thought I'd take
+		a stab at parsing the attributes so keys and values would get their
+		own colors.
+		<para/>
+		But looking at the code I realized it would take some work doing it
+		the way they did it so I decided to just at a regular expression at
+		right point.
+		<para/>
+		Thing is, regular expressions are great but when they finally result
+		in something like this, I have to wonder "<b>WTF am I doing???</b>":
+		<code>
+(\s*)(?:([^=\s]*)(?:(?:(\s*?=\s*?)([^\s"]+))|(?:(\s*?=\s*?)(".*?")))?)
+		</code>
+		And this is without the escaping that is necessary when putting this
+		in a Java string! Luckily it's only a couple of slashes but it can
+		soon get very messy.
+		<para/>
+		Oh, and what it does is figure out the attributes for an HTML or XML
+		element. So if you have something like this:
+		<code>
+&lt;input <b>type= checkbox name = "checkme" selected</b>&gt;
+		</code>
+		the regular expression will cut it up into the following tokens:
+		<list>
+			<item>" "</item>
+			<item>"type"</item>
+			<item>"= "</item>
+			<item>"checkbox"</item>
+			<item>" "</item>
+			<item>"name"</item>
+			<item>" = "</item>
+			<item>"\"checkme\""</item>
+			<item>" "</item>
+			<item>"selected"</item>
+		</list>
+		Of course not all of this is legal in XML, but the expression supports
+		the most lax of the 2 formats.
+	</blog:content>
+</blog:item>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Regular Hell" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Hey, I should do this more often! While writing the previous item I
+		thought it would be nice to format the regular expression a bit by
+		indenting it and adding some comment, this was the result:
+		<code>
+<b># gobble any spaces</b>
+(\s*)
+<b># main group</b>
+(?:
+	<b># keyword - gather letters until first space or =</b>
+	([^=\s]*)
+	<b># option group</b>
+	(?:
+		<b># option 1 - attribute has no quotes</b>
+		(?:
+			<b># gobble spaces and =</b>
+			(\s*?=\s*?)
+			<b># value - gather anything that's not a space or quote</b>
+			([^\s"]+)
+		)
+		|
+		<b># option 2 - attribute has quotes</b>
+		(?:
+			<b># gobble spaces and =</b>
+			(\s*?=\s*?)
+			<b># value - gather anything between two quotes</b>
+			(".*?")
+		)
+	)?
+)
+		</code>
+		And while setting this up I saw that this was actually more complicated
+		than need be so I started pruning. When I put back the resulting
+		expression everything still worked so I must have done something right.
+		The indented version looks like this:
+		<code>
+<b># gobble any spaces</b>
+(\s*)
+<b># keyword - gather letters until first space or =</b>
+([^=\s]*)
+<b># optional group containing the value</b>
+(?:
+	<b># gobble spaces and =</b>
+	(\s*?=\s*?)
+	<b># option group</b>
+	(?:
+		<b># value - (option 1) gather anything that's not a space or quote</b>
+		([^\s"]+)
+	|
+		<b># value - (option 2) gather anything between two quotes</b>
+		(".*?")
+	)
+)?
+		</code>
+		And the resulting expression looks like this:
+		<code>
+(\s*)([^=\s]*)(?:(?:(\s*?=\s*?)([^\s"]+))|(?:(\s*?=\s*?)(".*?")))?
+		</code>
+		A bit shorter than the first version but still way too cryptic in my
+		book.
+	</blog:content>
+</blog:item>
