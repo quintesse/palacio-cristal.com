@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog:item title="Eloquent" xmlns:blog="http://www.codejive.org/NS/portico/weblog">
+	<blog:content xmlns="http://www.codejive.org/NS/portico/richtext">
+		Linus must have been in one of his poetic moods again ;-)
+		<quote>
+It's one of those rare 'perfect' kernels. So if it doesn't happen to compile with your config (or it does compile, but then does unspeakable acts of perversion with your pet dachshund), you can rest easy knowing that it's all your own d*mn fault, and you should just fix your evil ways.
+		</quote>
+	</blog:content>
+</blog:item>
